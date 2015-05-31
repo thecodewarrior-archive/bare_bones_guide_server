@@ -3,4 +3,5 @@ class GuidePackVersion < ActiveRecord::Base
   belongs_to :browse_item
   has_many :guides
   has_many :guide_images
+  has_many :id_maps
 end
