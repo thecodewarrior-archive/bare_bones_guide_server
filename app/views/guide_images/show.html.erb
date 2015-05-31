@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Guide pack version:</strong>
+  <%= @guide_image.guide_pack_version %>
+</p>
+
+<p>
+  <strong>Path:</strong>
+  <%= @guide_image.path %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @guide_image.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @guide_image.description %>
+</p>
+
+<p>
+  <strong>Manifest version:</strong>
+  <%= @guide_image.manifest_version %>
+</p>
+
+<%= link_to 'Edit', edit_guide_image_path(@guide_image) %> |
+<%= link_to 'Back', guide_images_path %>
