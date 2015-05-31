@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guide_pack_version_id: 
+  path: MyString
+  title: MyString
+  description: MyString
+  manifest_version: 1
+
+two:
+  guide_pack_version_id: 
+  path: MyString
+  title: MyString
+  description: MyString
+  manifest_version: 1
