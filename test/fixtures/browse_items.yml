@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  browse_item_id: 
+  is_directory: false
+  value: MyString
+
+two:
+  browse_item_id: 
+  is_directory: false
+  value: MyString
