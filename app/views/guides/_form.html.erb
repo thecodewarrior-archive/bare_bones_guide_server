@@ -1,0 +1,16 @@
+<%= simple_form_for(@guide) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :guide_pack_version %>
+    <%= f.input :path %>
+    <%= f.input :title %>
+    <%= f.association :guide_image %>
+    <%= f.input :content %>
+    <%= f.input :manifest_version %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
