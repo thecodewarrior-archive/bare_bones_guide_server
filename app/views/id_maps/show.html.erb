@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Guide pack version:</strong>
+  <%= @id_map.guide_pack_version %>
+</p>
+
+<p>
+  <strong>Guide:</strong>
+  <%= @id_map.guide_id %>
+</p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @id_map.game_id %>
+</p>
+
+<%= link_to 'Edit', edit_id_map_path(@id_map) %> |
+<%= link_to 'Back', id_maps_path %>
