@@ -1,0 +1,31 @@
+<h1>Listing guide_packs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Packid</th>
+      <th>Pretty name</th>
+      <th>Description</th>
+      <th>Is private</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guide_packs.each do |guide_pack| %>
+      <tr>
+        <td><%= guide_pack.packid %></td>
+        <td><%= guide_pack.pretty_name %></td>
+        <td><%= guide_pack.description %></td>
+        <td><%= guide_pack.is_private %></td>
+        <td><%= link_to 'Show', guide_pack %></td>
+        <td><%= link_to 'Edit', edit_guide_pack_path(guide_pack) %></td>
+        <td><%= link_to 'Destroy', guide_pack, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Guide pack', new_guide_pack_path %>

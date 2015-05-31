@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :guide_packs
+
   resources :guides
 
   resources :guide_images

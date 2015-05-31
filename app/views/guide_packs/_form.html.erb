@@ -1,0 +1,14 @@
+<%= simple_form_for(@guide_pack) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :packid %>
+    <%= f.input :pretty_name %>
+    <%= f.input :description %>
+    <%= f.input :is_private %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
